@@ -38,7 +38,9 @@ print(' Weights=', W, '\nbiases=', b)
 # The output of the simple linear regression is in the form of f(X)= W  * X + b
 
 Y_pred = model.predict(X_test)
+plt.subplot(1,2,1)
 plt.scatter(X_train,Y_train)
+plt.subplot(1,2,2)
 plt.scatter(X_test, Y_test)
 plt.plot(X_test, Y_pred)
 plt.show()
